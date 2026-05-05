@@ -1,0 +1,103 @@
+.calculator {
+    width: 300px;
+    height: 500px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.display-wrapper {
+    width: 90%;
+    height: 60px;
+    background-color: #979797;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    font-size: 24px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.display-view {
+    width: 96%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: black;
+    padding: 0 10px;
+}
+
+.buttons-wrapper {
+    width: 90%;
+}
+
+.buttons {
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    place-items: center;
+    padding: 15px 10px;
+}
+
+.btn {
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 50px;
+    height: 50px;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.btn.operator {
+    background-color: #f39c12;
+    color: white;
+}
+
+.btn.operator:hover {
+    background-color: #e67e22;
+}
+
+.specials {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    background-color: #dfdfdf;
+    padding: 15px 10px;
+}
+
+.specials .clear {
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 120px;
+    height: 50px;
+}
